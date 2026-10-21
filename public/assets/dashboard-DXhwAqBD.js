@@ -1,0 +1,1 @@
+var e={medica:{id:`medica`,label:`Giolary Dental`},estetica:{id:`estetica`,label:`GIO Beauty & Wellness`}};export{e as t};

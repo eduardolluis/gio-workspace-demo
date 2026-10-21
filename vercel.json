@@ -1,0 +1,96 @@
+{
+  "rewrites": [
+    {
+      "source": "/inicio/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/agenda/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/pacientes/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/cobros/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/finanzas/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/tratamientos/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/profesionales/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/inventario/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/reportes/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/usuarios/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/perfil/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/configuracion/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/login/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/ayuda/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/privacidad/:path*",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/terminos/:path*",
+      "destination": "/demo.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/marketing/video/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "public"
+}

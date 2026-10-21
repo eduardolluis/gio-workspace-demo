@@ -1,0 +1,1 @@
+import{t as e}from"./react-CagXnHqg.js";var t=e();function n({className:e=``,style:n}){return(0,t.jsx)(`span`,{className:`skeleton ${e}`,style:n,"aria-hidden":`true`})}export{n as t};

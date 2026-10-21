@@ -1,0 +1,61 @@
+.gio-demo-bar {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 38px;
+  background: #193e33;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 22px;
+  gap: 12px;
+  font:
+    12px/1.4 Arial,
+    sans-serif;
+  box-sizing: border-box;
+}
+.gio-demo-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+.gio-demo-bar button {
+  font: inherit;
+  border: 1px solid #ffffff55;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+body {
+  padding-top: 42px !important;
+}
+.gio-demo-bar + #root {
+  min-height: calc(100vh - 42px);
+}
+@media (max-width: 700px) {
+  .gio-demo-bar {
+    font-size: 10px;
+    padding: 5px 8px;
+    min-height: 48px;
+  }
+  .gio-demo-bar span {
+    max-width: 160px;
+  }
+  body {
+    padding-top: 50px !important;
+  }
+}
+.dashboard-sidebar {
+  top: 42px !important;
+  height: calc(100dvh - 42px) !important;
+}
+@media (max-width: 700px) {
+  .dashboard-sidebar {
+    top: 50px !important;
+    height: calc(100dvh - 50px) !important;
+  }
+}

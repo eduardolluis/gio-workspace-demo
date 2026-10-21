@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <script src="/demo-adapter.js"></script>
+    <link rel="stylesheet" href="/demo.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta
+      name="description"
+      content="GIO Workspace, plataforma privada para personal autorizado de GIO Beauty & Wellness y Giolary Dental."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GIO Workspace" />
+    <meta property="og:title" content="GIO Workspace" />
+    <meta
+      property="og:description"
+      content="Private workspace for authorized GIO personnel."
+    />
+    <meta property="og:image" content="/images/gio-logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/icons/gio-workspace.svg?v=2" />
+    <title>GIO Workspace</title>
+    <style>
+      :root {
+        color: #20231f;
+        background: #fdfbf7;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html,
+      body,
+      #root {
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+      }
+      .initial-loading {
+        background: #fdfbf7;
+        place-items: center;
+        min-height: 100dvh;
+        padding: 24px;
+        display: grid;
+      }
+      .initial-loading__content {
+        justify-items: center;
+        width: min(280px, 100vw - 48px);
+        display: grid;
+      }
+      .initial-loading__brand {
+        align-items: center;
+        gap: 12px;
+        display: flex;
+      }
+      .initial-loading__mark {
+        color: #fff;
+        background: #355f52;
+        border-radius: 12px;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        font-family:
+          Georgia,
+          Times New Roman,
+          serif;
+        font-size: 1.35rem;
+        display: grid;
+        box-shadow: 0 10px 24px #355f5229;
+      }
+      .initial-loading__wordmark {
+        gap: 2px;
+        display: grid;
+      }
+      .initial-loading__wordmark strong {
+        color: #173c32;
+        font-family:
+          Georgia,
+          Times New Roman,
+          serif;
+        font-size: 1.05rem;
+        font-weight: 500;
+      }
+      .initial-loading__wordmark small {
+        color: #5f6b64;
+        font-size: 0.72rem;
+      }
+      .initial-loading__progress {
+        background: #355f521f;
+        border-radius: 999px;
+        width: 100%;
+        height: 2px;
+        margin-top: 28px;
+        position: relative;
+        overflow: hidden;
+      }
+      .initial-loading__progress span {
+        border-radius: inherit;
+        background: #355f52;
+        width: 42%;
+        animation: 1.25s ease-in-out infinite initial-loading-progress;
+        position: absolute;
+        inset: 0 auto 0 0;
+      }
+      @keyframes initial-loading-progress {
+        0% {
+          transform: translate(-110%);
+        }
+        to {
+          transform: translate(350%);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .initial-loading__progress span {
+          opacity: 0.55;
+          width: 100%;
+          animation: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BHOykXBC.js"></script>
+    <link
+      rel="modulepreload"
+      crossorigin
+      href="/assets/rolldown-runtime-CbXtAM7H.js"
+    />
+    <link rel="modulepreload" crossorigin href="/assets/icons-ByBKVuXn.js" />
+    <link rel="modulepreload" crossorigin href="/assets/react-CagXnHqg.js" />
+    <link rel="modulepreload" crossorigin href="/assets/supabase-Bl13M3oS.js" />
+    <link rel="stylesheet" crossorigin href="/assets/index-C7jxynPt.css" />
+  </head>
+  <body>
+    <div id="root">
+      <main class="initial-loading" aria-label="GIO Workspace" aria-busy="true">
+        <div class="initial-loading__content">
+          <div class="initial-loading__brand">
+            <span class="initial-loading__mark" aria-hidden="true">G</span>
+            <span class="initial-loading__wordmark">
+              <strong>GIO Workspace</strong>
+              <small>Beauty · Wellness · Dental</small>
+            </span>
+          </div>
+          <div class="initial-loading__progress" aria-hidden="true">
+            <span></span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <noscript>
+      <main class="initial-loading" aria-label="GIO Workspace">
+        <div class="initial-loading__content">
+          <div class="initial-loading__brand">
+            <span class="initial-loading__mark" aria-hidden="true">G</span>
+            <span class="initial-loading__wordmark">
+              <strong>GIO Workspace</strong>
+              <small>JavaScript required · JavaScript requerido</small>
+            </span>
+          </div>
+        </div>
+      </main>
+    </noscript>
+  </body>
+</html>

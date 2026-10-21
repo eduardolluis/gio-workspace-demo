@@ -1,0 +1,26 @@
+{
+  "name": "gio-workspace-demo",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Public showcase and browser-local demo of GIO Workspace",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "demo:record": "node scripts/record-demo.cjs",
+    "demo:export": "node scripts/export-media.mjs",
+    "check": "node --check scripts/serve.mjs && node --check public/demo-adapter.js && node --check public/marketing/site.js && node --check scripts/record-demo.cjs && node --check scripts/export-media.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://gio-landing-demo.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardolluis/gio-workspace-demo.git"
+  }
+}
